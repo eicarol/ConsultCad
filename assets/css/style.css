@@ -51,6 +51,11 @@ img {
     height: auto;
 }
 
+.img-cover {
+    object-fit: cover;
+    object-position: center;
+}
+
 .section-padding {
     padding-top: 140px;
     padding-bottom: 140px;
@@ -301,7 +306,7 @@ outside .pulse:hover,
 /* FOOTER */
 footer {
     /*padding-top: 10px;*/
-    background-color: #2AA9AA;    
+    background-color: #2AA9AA;
 }
 
 .footer-top {
