@@ -45,7 +45,7 @@
             <a class="nav-link" href="index.html#news">News</a>
           </li>
         </ul>
-        <a href="#" class="btn btn-outline-dark brand-light ms-lg-3">Contact</a>
+        <a href="contact.html#contact" class="btn btn-outline-dark brand-light ms-lg-3">Contact</a>
       </div>
     </div>
   </nav>
@@ -56,11 +56,10 @@
       <div class="row g-4 text-center">
         <div class="col-lg-4 col-sm-12" data-aos="fade-down" data-aos-delay="150">
           <div class="service theme-shadow p-lg-5 p-4">
-            <div class="review-person mt-4 d-flex align-items-center ">
+            <div class="iconbox">
               <img class="img-cover" src="./assets/images/insertPlus.png" alt="" width="100px" height="100px">
             </div>
             <h5 class="mt-4 mb-3">InsertPlus</h5>
-            <div class="line"></div>
             <p>Autodesk® Inventor® 2023 compatibility<br>Version 2.3, 10/17/2022</p>
           </div>
         </div>
@@ -81,15 +80,37 @@
               <a class="btn btn-brand me-2 pulse">English</a>
             </h5>
           </div>
-          <div data-aos="fade-down" data-aos-delay="50" style="justify-content: left !important;">
-            <a href="#" class="btn btn-outline-dark ms-2">See more</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#" class="btn btn-brand me-2 pulse">Download</a>
-          </div>
+          <article>
+            <div data-aos="fade-down" data-aos-delay="50" style="justify-content: left !important;">
+              <a class="btn btn-outline-dark ms-2" id="btninsertplus">See more</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#" class="btn btn-brand me-2 pulse">Download</a>
+              <h3 class="mt-5 mb-3 mr-4 insertplusTrial"
+                style="text-align: left !important; margin-left: 4% !important; display: none;">Trial
+                Description
+              </h3>
+              <p class="insertplusTrial"
+                style="text-align: left !important; margin-left: 4% !important; display: none;">The
+                Addin works 100% on
+                trial time.
+                App works for 14 days Trial period with Full Features.</p>
+              <figure class="insertplusTrial" style="display: none;">
+                <div class="boxVideo">
+                  <iframe width="420" height="315" src="https://www.youtube.com/embed/H7Ykzl7DICg" frameborder="0"
+                    allowfullscreen></iframe>
+                </div>
+              </figure>
+            </div>
+          </article>
+          <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class="bi bi-arrow-up-square i-BtnTop" ></i>
+          </button>
+
         </div>
+
         <div class="col-lg-4 col-sm-12" data-aos="fade-down" data-aos-delay="150">
           <div class="service theme-shadow p-lg-5 p-4">
-            <div class="review-person mt-4 d-flex align-items-center ">
+            <div class="iconbox">
               <img class="img-cover" src="./assets/images/insertCopy.png" alt="" width="100px" height="100px">
             </div>
             <h5 class="mt-4 mb-3">InsertCopy</h5>
@@ -113,15 +134,33 @@
               <a class="btn btn-brand me-2 pulse">English</a>
             </h5>
           </div>
-          <div data-aos="fade-down" data-aos-delay="50" style="justify-content: right !important;">
-            <a href="#" class="btn btn-outline-dark ms-2">See more</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#" class="btn btn-brand me-2 pulse">Download</a>
-          </div>
+          <article>
+            <div data-aos="fade-down" data-aos-delay="50" style="justify-content: right !important;">
+              <a class="btn btn-outline-dark ms-2" id="btninsertcopy">See more</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#" class="btn btn-brand me-2 pulse">Download</a>
+              <h3 class="mt-5 mb-3 mr-4 insertcopyTrial"
+                style="text-align: left !important; margin-left: 4% !important; display: none;">Trial
+                Description
+              </h3>
+              <p class="insertcopyTrial"
+                style="text-align: left !important; margin-left: 4% !important; display: none;">The
+                Addin works 100% on
+                trial time.
+                App works for 14 days Trial period with Full Features.</p>
+              <figure class="insertcopyTrial" style="display: none;">
+                <div class="boxVideo">
+                  <iframe width="420" height="315" src="https://www.youtube.com/embed/T52i3JAPOuo" frameborder="0"
+                    allowfullscreen></iframe>
+                </div>
+              </figure>
+            </div>
+          </article>
         </div>
+
         <div class="col-lg-4 col-sm-12" data-aos="fade-down" data-aos-delay="150">
           <div class="service theme-shadow p-lg-5 p-4">
-            <div class="review-person mt-4 d-flex align-items-center ">
+            <div class="iconbox">
               <img class="img-cover" src="./assets/images/rename.png" alt="" width="100px" height="100px">
             </div>
             <h5 class="mt-4 mb-3">Rename</h5>
@@ -145,57 +184,81 @@
               <a class="btn btn-brand me-2 pulse">English</a>
             </h5>
           </div>
-          <div data-aos="fade-down" data-aos-delay="50" style="justify-content: right !important;">
-            <a href="#" class="btn btn-outline-dark ms-2">See more</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#" class="btn btn-brand me-2 pulse">Download</a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-12" data-aos="fade-down" data-aos-delay="150">
-          <div class="service theme-shadow p-lg-5 p-4">
-            <div class="review-person mt-4 d-flex align-items-center ">
-              <img class="img-cover" src="./assets/images/replaceCopy.png" alt="" width="100px" height="100px">
+          <article>
+            <div data-aos="fade-down" data-aos-delay="50" style="justify-content: right !important;">
+              <a class="btn btn-outline-dark ms-2" id="btnrename">See more</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#" class="btn btn-brand me-2 pulse">Download</a>
+              <h3 class="mt-5 mb-3 mr-4 renameTrial"
+                style="text-align: left !important; margin-left: 4% !important; display: none;">Trial
+                Description
+              </h3>
+              <p class="renameTrial" style="text-align: left !important; margin-left: 4% !important; display: none;">The
+                Addin works 100% on
+                trial time.
+                App works for 14 days Trial period with Full Features.</p>
+              <figure class="renameTrial" style="display: none;">
+                <div class="boxVideo">
+                  <iframe width="420" height="315" src="https://www.youtube.com/embed/dgpTUVe0pqw" frameborder="0"
+                    allowfullscreen></iframe>
+                </div>
+              </figure>
             </div>
-            <h5 class="mt-4 mb-3">ReplaceCopy</h5>
-            <div class="line"></div>
-            <p>Autodesk® Inventor® 2023 compatibility<br>Version 2.3, 10/17/2022</p>
-          </div>
+          </article>
         </div>
-        <div class="col-lg-8 col-sm-12" data-aos="fade-down" data-aos-delay="150">
-          <div class="p-lg-5 p-4">
-            <h3 class="mt-1 mb-3 mr-4" style="text-align: left !important;">Descrition
-            </h3>
-            <p style="text-align: left !important;">This app will help you to apply insert constraints repeatedly,
-              grouping parts and using the group to constraints and joints, will help you drastically reduce time.</p>
-            <h5 class="mt-4 mb-3" style="text-align: left !important;">OS:
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a class="btn btn-brand me-2 pulse">Win64</a>
-            </h5>
-            <h5 class="mt-4 mb-1" style="text-align: left !important;">Language
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a class="btn btn-brand me-2 pulse">English</a>
-            </h5>
-          </div>
-          <div data-aos="fade-down" data-aos-delay="50" style="justify-content: right !important;">
-            <a class="btn btn-outline-dark ms-2" id="replaceCopy" onclick="see();">See more</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#" class="btn btn-brand me-2 pulse">Download</a>
-          </div>
 
-          <div class="p-lg-12 p-4" style="display: none;" id="insertCopyTrial">
-            <h3 class="mt-1 mb-3 mr-4" style="text-align: left !important;">Trial Description
-            </h3>
-            <p style="text-align: left !important;">The Addin works 100% on trial time.
-              App works for 14 days Trial period with Full Features.</p>
+        <div class="row g-4 text-center">
+          <div class="col-lg-4 col-sm-12" data-aos="fade-down" data-aos-delay="150">
+            <div class="service theme-shadow p-lg-5 p-4">
+              <div class="iconbox">
+                <img class="img-cover" src="./assets/images/replaceCopy.png" alt="" width="100px" height="100px">
+              </div>
+              <h5 class="mt-4 mb-3">Replace</h5>
+              <div class="line"></div>
+              <p>Autodesk® Inventor® 2023 compatibility<br>Version 2.3, 10/17/2022</p>
+            </div>
           </div>
-          <!-- <div class="p-lg-12 p-4" style="display: none;">
-            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" style="content: left;">
-            </iframe>
-          </div> -->
+          <div class="col-lg-8 col-sm-12" data-aos="fade-down" data-aos-delay="150">
+            <div class="p-lg-5 p-4">
+              <h3 class="mt-1 mb-3 mr-4" style="text-align: left !important;">Descrition
+              </h3>
+              <p style="text-align: left !important;">This app will help you to apply insert constraints repeatedly,
+                grouping parts and using the group to constraints and joints, will help you drastically reduce time.</p>
+              <h5 class="mt-4 mb-3" style="text-align: left !important;">OS:
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="btn btn-brand me-2 pulse">Win64</a>
+              </h5>
+              <h5 class="mt-4 mb-1" style="text-align: left !important;">Language
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="btn btn-brand me-2 pulse">English</a>
+              </h5>
+            </div>
+            <article>
+              <div data-aos="fade-down" data-aos-delay="50" style="justify-content: right !important;">
+                <a class="btn btn-outline-dark ms-2" id="btnreplaceCopy" onclick="">See more</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="btn btn-brand me-2 pulse">Download</a>
+                <h3 class="mt-5 mb-3 mr-4 replaceTrial"
+                  style="text-align: left !important; margin-left: 4% !important; display: none;">Trial
+                  Description
+                </h3>
+                <p class="replaceTrial" style="text-align: left !important; margin-left: 4% !important; display: none;">
+                  The Addin works 100%
+                  on
+                  trial time.
+                  App works for 14 days Trial period with Full Features.</p>
+                <figure class="replaceTrial" style="display: none;">
+                  <div class="boxVideo">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/T52i3JAPOuo" frameborder="0"
+                      allowfullscreen></iframe>
+                  </div>
+                </figure>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
-    </div>
   </section>
 
   <!-- FOOTER -->
@@ -239,27 +302,46 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
   <script>
-    function see() {
-      $('#replaceCopy').on('click', function () {
-       
-       if ($("#insertCopyTrial").css("display", "none")) {
-       
-        $("#insertCopyTrial").css("display", "block");
-       } else{
-        $("#insertCopyTrial").css("display", "none");
-       }
-
-       
-
-
-        //   $("#insertCopyTrial").css("display", "block");
-        // }
-        // else {
-
-        //   $("#insertCopyTrial").css("display", "none");
-        // }
+    $(function () {
+      $('#btninsertplus').click(function () {
+        $(this).siblings('.insertplusTrial').slideToggle();
       });
+    });
+
+    $(function () {
+      $('#btninsertcopy').click(function () {
+        $(this).siblings('.insertcopyTrial').slideToggle();
+      });
+    });
+
+    $(function () {
+      $('#btnrename').click(function () {
+        $(this).siblings('.renameTrial').slideToggle();
+      });
+    });
+
+    $(function () {
+      $('#btnreplaceCopy').click(function () {
+        $(this).siblings('.replaceTrial').slideToggle();
+      });
+    });
+
+    let mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
     }
+    
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    } 
   </script>
 </body>
 
