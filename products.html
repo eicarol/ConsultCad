@@ -4,12 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ConsultCad</title>
+  <title> Products</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
@@ -27,19 +29,19 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html#hero">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#counter">About us</a>
+            <a class="nav-link" href="index.html#about">About us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="products.html#services">Products</a>
+            <a class="nav-link" href="#service">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#join">Community</a>
+            <a class="nav-link" href="index.html#policy">Privacy</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html#news">News</a>
@@ -51,112 +53,246 @@
   </nav>
 
   <!-- SERVICES -->
-  <section id="services" class="section-padding border-top">
+  <section id="service" class="min-vh-100 d-flex align-items-center text-left">
     <div class="container">
+
       <div class="row">
-        <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
+        <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="10">
           <div class="section-title">
-            <h1 class="display-4 fw-semibold" style="color: #2AA9AA !important;">Our Services</h1>
+            <h1 class="display-4 fw-semibold" style="color: #2AA9AA !important;">Our Products</h1>
             <div class="line"></div>
           </div>
         </div>
       </div>
+
+      <!-- CARDS -->
       <div class="row g-4 text-center">
-        <div class="col-lg-4 col-sm-12" data-aos="fade-down" data-aos-delay="60">
-          <div class="service theme-shadow p-lg-5 p-4">
+        <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="15">
+          <div class="service-prod cardInsertPlus theme-shadow p-lg-4 p-2" id="btnInsertPlus">
             <div class="iconbox">
-              <img class="img-cover" src="./assets/images/insertPlus.png" alt="" width="100px" height="100px">
+              <img class="img-cover" src="./assets/images/insertPlus.png" alt="" width="100px" height="100px"
+                onclick="">
             </div>
             <h5 class="mt-4 mb-3">InsertPlus</h5>
-            <p>Autodesk® Inventor® 2023 compatibility<br>Version 2.3, 10/17/2022</p>
+            <p>Version 2.3 10/17/2022</p>
           </div>
         </div>
-        <div class="col-lg-8 col-sm-12" data-aos="fade-down" data-aos-delay="60">
-          <div class="p-lg-5 p-4">
-            <h3 class="mt-1 mb-3 mr-4" style="text-align: left !important;">Descrition
-            </h3>
-            <p style="text-align: left !important;">This app will help you to apply insert constraints repeatedly,
-              grouping parts and using the group to constraints and joints, will help you drastically reduce time.</p>
 
-            <h5 class="mt-4 mb-3" style="text-align: left !important;">OS:
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a class="btn btn-brand me-2 pulse">Win64</a>
-            </h5>
-            <h5 class="mt-4 mb-1" style="text-align: left !important;">Language
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a class="btn btn-brand me-2 pulse">English</a>
-            </h5>
+        <div class="col-lg-3 col-sm-6 " data-aos="fade-down" data-aos-delay="15">
+          <div class="service-prod cardInsertCopy theme-shadow p-lg-4 p-2" id="btnInsertCopy">
+            <div class="iconbox small">
+              <img class="img-cover" src="./assets/images/insertCopy.png" alt="" width="100px" height="100px">
+            </div>
+            <h5 class="mt-4 mb-3 sm">InsertCopy</h5>
+            <div class="line"></div>
+            <p>Version 2.3, 10/17/2022</p>
           </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 " data-aos="fade-down" data-aos-delay="15">
+          <div class="service-prod cardRename theme-shadow p-lg-4 p-2" id="btnRename">
+            <div class="iconbox">
+              <img class="img-cover" src="./assets/images/rename.png" alt="" width="100px" height="100px">
+            </div>
+            <h5 class="mt-4 mb-3">Rename</h5>
+            <div class="line"></div>
+            <p>Version 2.3 10/17/2022</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="15">
+          <div class="service-prod cardReplace theme-shadow p-lg-4 p-2" id="btnReplace">
+            <div class="iconbox">
+              <img class="img-cover" src="./assets/images/replaceCopy.png" alt="" width="100px" height="100px">
+            </div>
+            <h5 class="mt-4 mb-3">Replace</h5>
+            <div class="line"></div>
+            <p>Version 2.3 10/17/2022</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DESCRIÇÕES -->
+      <!-- INSERTPLUS -->
+      <div class="row g-4 text-center insertPlus" id="descricaoInsertPlus" style="display: none;">
+        <div class="col-lg-8 col-sm-12 " data-aos="fade-down" data-aos-delay="20">
           <article>
-            <div data-aos="fade-down" data-aos-delay="50" style="justify-content: left !important;">
-              <a class="btn btn-outline-dark ms-2" id="btninsertplus">See more</a>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="#" class="btn btn-brand me-2 pulse">Download</a>
-              <h3 class="mt-5 mb-3 mr-4 insertplusTrial"
-                style="text-align: left !important; margin-left: 4% !important; display: none;">Trial
-                Description
+            <div class="p-lg-4 p-2">
+              <h3 class="mt-1 mb-3 mr-4" style="text-align: left !important;">Descrition
               </h3>
-              <p class="insertplusTrial"
-                style="text-align: left !important; margin-left: 4% !important; display: none;">The
-                Addin works 100% on
-                trial time.
-                App works for 14 days Trial period with Full Features.</p>
-              <figure class="insertplusTrial" style="display: none;">
+              <p style="text-align: justify !important;"><b>InsertPlus</b> allows you to apply the insert constraint
+                repeatedly and with the option 'group selection', where it create a group with all items that are in
+                restriction with the current part.</p>
+              <p style="text-align: left !important;">U$15.00 each license <a
+                  href="https://www.paypal.com/webapps/hermes?token=9TG787413D700233B&useraction=commit&rm=1&wpsFlowRedirectToXorouterSkipHermesStartTime=1677083355434&mfid=1677083355156_f53585514fc3a"
+                  target="_blank">Buy
+                  Now via PayPal</a> - Other payment method?
+                Contact us.
+              </p>
+              <p style="text-align: left !important;">License type: Perpetual per computer. More details see Privacy
+                and Licensing.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4 col-sm-12" data-aos="fade-down" data-aos-delay="20" style="text-align: right !important;">
+          <article>
+            <div class="p-lg-4 p-2">
+              <h5 class="mt-4 mb-3" style="text-align: right !important;">OS:
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="btn-prod me-2 a-prod">Win64</a>
+              </h5>
+              <h5 class="mt-4 mb-1" style="text-align: right !important;">Language
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="btn-prod me-2 a-prod">English</a>
+              </h5>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-6 col-sm-12" data-aos="fade-down" data-aos-delay="20">
+          <article>
+            <div class="p-lg-4 p-2">
+              <h3 class="mt-1 mb-3 mr-4" style="text-align: left !important;">Official Version 2.3.0
+              </h3>
+              <p style="text-align: justify !important;">
+                - Compability with versions: 2023 and earlier
+                <br>- non-Migration files ignores
+                <br>- Missing files ignores
+                <br>&nbsp;
+                <br>&nbsp;
+              </p>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="20"
+              style="text-align: left !important; margin-left: 1.5em !important;">
+              <a href="#" class="btn btn-brand me-2 pulse">Download Now</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-6 col-sm-12" data-aos="fade-down" data-aos-delay="20">
+          <article>
+            <div class="p-lg-4 p-2">
+              <h3 class="mt-1 mb-3 mr-4" style="text-align: left !important;">Beta version 2.3.2
+              </h3>
+              <p style="text-align: justify !important;">
+                - Compability with versions: 2024 beta and earlier
+                <br>- All features earlier
+                <br>- Fix bug for decimal input
+                <br>- Enable Dark Theme (testing)
+                <br>- Fix location for users with 2 screens
+              </p>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="20"
+              style="text-align: left !important; margin-left: 1.5em !important;">
+              <a href="" class="btn btn-outline-dark ms-2">Download</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-12 col-sm-12" data-aos="fade-down" data-aos-delay="20"
+          style="margin-bottom: 7em !important;">
+          <article>
+            <div data-aos="fade-down" data-aos-delay="20" style="justify-content: left !important;">
+              <figure class="">
                 <div class="boxVideo">
-                  <iframe width="420" height="315" src="https://www.youtube.com/embed/H7Ykzl7DICg" frameborder="0"
+                  <iframe width="100%" height="315" src="https://www.youtube.com/embed/H7Ykzl7DICg" frameborder="0"
                     allowfullscreen></iframe>
                 </div>
               </figure>
             </div>
           </article>
-          <button onclick="topFunction()" id="myBtn" title="Go to top">
-            <i class="bi bi-arrow-up-square i-BtnTop"></i>
-          </button>
-
         </div>
+      </div>
 
-        <div class="col-lg-4 col-sm-12" data-aos="fade-down" data-aos-delay="60">
-          <div class="service theme-shadow p-lg-5 p-4">
-            <div class="iconbox">
-              <img class="img-cover" src="./assets/images/insertCopy.png" alt="" width="100px" height="100px">
-            </div>
-            <h5 class="mt-4 mb-3">InsertCopy</h5>
-            <div class="line"></div>
-            <p>Autodesk® Inventor® 2023 compatibility<br>Version 2.3, 10/17/2022</p>
-          </div>
-        </div>
-        <div class="col-lg-8 col-sm-12" data-aos="fade-down" data-aos-delay="60">
-          <div class="p-lg-5 p-4">
-            <h3 class="mt-1 mb-3 mr-4" style="text-align: left !important;">Descrition
-            </h3>
-            <p style="text-align: left !important;">This app will help you to apply insert constraints repeatedly,
-              grouping parts and using the group to constraints and joints, will help you drastically reduce time.</p>
-            <h5 class="mt-4 mb-3" style="text-align: left !important;">OS:
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a class="btn btn-brand me-2 pulse">Win64</a>
-            </h5>
-            <h5 class="mt-4 mb-1" style="text-align: left !important;">Language
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a class="btn btn-brand me-2 pulse">English</a>
-            </h5>
-          </div>
+
+
+
+
+      <!-- INSERTCOPY -->
+      <div class="row g-4 text-center insertCopy" id="descricaoInsertCopy" style="display: none;">
+        <div class="col-lg-8 col-sm-12 insertplusTrial" data-aos="fade-down" data-aos-delay="20">
           <article>
-            <div data-aos="fade-down" data-aos-delay="50" style="justify-content: right !important;">
-              <a class="btn btn-outline-dark ms-2" id="btninsertcopy">See more</a>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="#" class="btn btn-brand me-2 pulse">Download</a>
-              <h3 class="mt-5 mb-3 mr-4 insertcopyTrial"
-                style="text-align: left !important; margin-left: 4% !important; display: none;">Trial
-                Description
+            <div class="p-lg-4 p-2">
+              <h3 class="mt-1 mb-3 mr-4" style="text-align: left !important;">Descrition
               </h3>
-              <p class="insertcopyTrial"
-                style="text-align: left !important; margin-left: 4% !important; display: none;">The
-                Addin works 100% on
-                trial time.
-                App works for 14 days Trial period with Full Features.</p>
-              <figure class="insertcopyTrial" style="display: none;">
+              <p style="text-align: justify !important;"><b>InsertCopy</b> allows you to enter identical copies of the
+                selected part in the assembly environment, without affecting the existing part. And taking advantage of
+                the existing detailing.</p>
+              <p style="text-align: left !important;">U$4.99 each license <a
+                  href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=f591561779e32&mfid=1676943163633_f591561779e32#/checkout/openButton"
+                  target="_blank">Buy
+                  Now via PayPal</a> - Other payment method?
+                Contact us.
+              </p>
+              <p style="text-align: left !important;">License type: Perpetual per computer. More details see Privacy
+                and Licensing.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4 col-sm-12" data-aos="fade-down" data-aos-delay="20" style="text-align: right !important;">
+          <article>
+            <div class="p-lg-4 p-2">
+              <h5 class="mt-4 mb-3" style="text-align: right !important;">OS:
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="btn-prod me-2 a-prod">Win64</a>
+              </h5>
+              <h5 class="mt-4 mb-1" style="text-align: right !important;">Language
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="btn-prod me-2 a-prod">English</a>
+              </h5>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-6 col-sm-12" data-aos="fade-down" data-aos-delay="20">
+          <article>
+            <div class="p-lg-4 p-2">
+              <h3 class="mt-1 mb-3 mr-4" style="text-align: left !important;">Official Version 2.3.0
+              </h3>
+              <p style="text-align: justify !important;">
+                - Compability with versions: 2023 and earlier
+                <br>&nbsp;
+                <br>&nbsp;
+                <br>&nbsp;
+              </p>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="20"
+              style="text-align: left !important; margin-left: 1.5em !important;">
+              <a href="#" class="btn btn-brand me-2 pulse">Download Now</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-6 col-sm-12" data-aos="fade-down" data-aos-delay="20">
+          <article>
+            <div class="p-lg-4 p-2">
+              <h3 class="mt-1 mb-3 mr-4" style="text-align: left !important;">Beta version 2.3.1
+              </h3>
+              <p style="text-align: justify !important;">
+                - Compability with versions: 2024 beta and earlier
+                <br>- non-Migration files ignores
+                <br>- Missing files ignores
+                <br>- Fix location for users with 2 screens
+              </p>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="20"
+              style="text-align: left !important; margin-left: 1.5em !important;">
+              <a href="" class="btn btn-outline-dark ms-2">Download</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-12 col-sm-12" data-aos="fade-down" data-aos-delay="20"
+          style="margin-bottom: 7em !important;">
+          <article>
+            <div data-aos="fade-down" data-aos-delay="20" style="justify-content: left !important;">
+              <figure class="">
                 <div class="boxVideo">
                   <iframe width="420" height="315" src="https://www.youtube.com/embed/T52i3JAPOuo" frameborder="0"
                     allowfullscreen></iframe>
@@ -165,47 +301,89 @@
             </div>
           </article>
         </div>
+      </div>
 
-        <div class="col-lg-4 col-sm-12" data-aos="fade-down" data-aos-delay="60">
-          <div class="service theme-shadow p-lg-5 p-4">
-            <div class="iconbox">
-              <img class="img-cover" src="./assets/images/rename.png" alt="" width="100px" height="100px">
-            </div>
-            <h5 class="mt-4 mb-3">Rename</h5>
-            <div class="line"></div>
-            <p>Autodesk® Inventor® 2023 compatibility<br>Version 2.3, 10/17/2022</p>
-          </div>
-        </div>
-        <div class="col-lg-8 col-sm-12" data-aos="fade-down" data-aos-delay="60">
-          <div class="p-lg-5 p-4">
-            <h3 class="mt-1 mb-3 mr-4" style="text-align: left !important;">Descrition
-            </h3>
-            <p style="text-align: left !important;">This app will help you to apply insert constraints repeatedly,
-              grouping parts and using the group to constraints and joints, will help you drastically reduce time.</p>
-            <h5 class="mt-4 mb-3" style="text-align: left !important;">OS:
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a class="btn btn-brand me-2 pulse">Win64</a>
-            </h5>
-            <h5 class="mt-4 mb-1" style="text-align: left !important;">Language
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a class="btn btn-brand me-2 pulse">English</a>
-            </h5>
-          </div>
+      <!-- RENAME -->
+      <div class="row g-4 text-center rename" id="descricaoRename" style="display: none;">
+        <div class="col-lg-8 col-sm-12 insertplusTrial" data-aos="fade-down" data-aos-delay="20">
           <article>
-            <div data-aos="fade-down" data-aos-delay="50" style="justify-content: right !important;">
-              <a class="btn btn-outline-dark ms-2" id="btnrename">See more</a>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="#" class="btn btn-brand me-2 pulse">Download</a>
-              <h3 class="mt-5 mb-3 mr-4 renameTrial"
-                style="text-align: left !important; margin-left: 4% !important; display: none;">Trial
-                Description
+            <div class="p-lg-4 p-2">
+              <h3 class="mt-1 mb-3 mr-4" style="text-align: left !important;">Descrition
               </h3>
-              <p class="renameTrial" style="text-align: left !important; margin-left: 4% !important; display: none;">The
-                Addin works 100% on
-                trial time.
-                App works for 14 days Trial period with Full Features.</p>
-              <figure class="renameTrial" style="display: none;">
+              <p style="text-align: justify !important;"><b>Rename</b> allows you rename files directly in the assembly
+                environment. And re-linking the detailing.</p>
+              <p style="text-align: left !important;">U$4.99 each license <a
+                  href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=f2619437a6432&mfid=1677082911508_f2619437a6432#/checkout/openButton"
+                  target="_blank">Buy
+                  Now via PayPal</a> - Other payment method?
+                Contact us.
+              </p>
+              <p style="text-align: left !important;">License type: Perpetual per computer. More details see Privacy
+                and Licensing.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4 col-sm-12" data-aos="fade-down" data-aos-delay="20" style="text-align: right !important;">
+          <article>
+            <div class="p-lg-4 p-2">
+              <h5 class="mt-4 mb-3" style="text-align: right !important;">OS:
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="btn-prod me-2 a-prod">Win64</a>
+              </h5>
+              <h5 class="mt-4 mb-1" style="text-align: right !important;">Language
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="btn-prod me-2 a-prod">English</a>
+              </h5>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-6 col-sm-12" data-aos="fade-down" data-aos-delay="20">
+          <article>
+            <div class="p-lg-4 p-2">
+              <h3 class="mt-1 mb-3 mr-4" style="text-align: left !important;">Official Version 2.3.0
+              </h3>
+              <p style="text-align: justify !important;">
+                - Compability with versions: 2023 and earlier
+                <br>&nbsp;
+                <br>&nbsp;
+                <br>&nbsp;
+              </p>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="20"
+              style="text-align: left !important; margin-left: 1.5em !important;">
+              <a href="#" class="btn btn-brand me-2 pulse">Download Now</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-6 col-sm-12" data-aos="fade-down" data-aos-delay="20">
+          <article>
+            <div class="p-lg-4 p-2">
+              <h3 class="mt-1 mb-3 mr-4" style="text-align: left !important;">Beta version 2.3.1
+              </h3>
+              <p style="text-align: justify !important;">
+                - Compability with versions: 2024 beta and earlier
+                <br>- non-Migration files ignores
+                <br>- Missing files ignores
+                <br>- Fix location for users with 2 screens
+              </p>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="20"
+              style="text-align: left !important; margin-left: 1.5em !important;">
+              <a href="" class="btn btn-outline-dark ms-2">Download</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-12 col-sm-12" data-aos="fade-down" data-aos-delay="20"
+          style="margin-bottom: 7em !important;">
+          <article>
+            <div data-aos="fade-down" data-aos-delay="20" style="justify-content: left !important;">
+              <figure class="">
                 <div class="boxVideo">
                   <iframe width="420" height="315" src="https://www.youtube.com/embed/dgpTUVe0pqw" frameborder="0"
                     allowfullscreen></iframe>
@@ -214,93 +392,189 @@
             </div>
           </article>
         </div>
+      </div>
 
-        <div class="row g-4 text-center">
-          <div class="col-lg-4 col-sm-12" data-aos="fade-down" data-aos-delay="60">
-            <div class="service theme-shadow p-lg-5 p-4">
-              <div class="iconbox">
-                <img class="img-cover" src="./assets/images/replaceCopy.png" alt="" width="100px" height="100px">
-              </div>
-              <h5 class="mt-4 mb-3">Replace</h5>
-              <div class="line"></div>
-              <p>Autodesk® Inventor® 2023 compatibility<br>Version 2.3, 10/17/2022</p>
-            </div>
-          </div>
-          <div class="col-lg-8 col-sm-12" data-aos="fade-down" data-aos-delay="60">
-            <div class="p-lg-5 p-4">
+      <!-- REPLACE -->
+      <div class="row g-4 text-center replace" id="descricaoReplace" style="display: none;">
+        <div class="col-lg-8 col-sm-12 insertplusTrial" data-aos="fade-down" data-aos-delay="20">
+          <article>
+            <div class="p-lg-4 p-2">
               <h3 class="mt-1 mb-3 mr-4" style="text-align: left !important;">Descrition
               </h3>
-              <p style="text-align: left !important;">This app will help you to apply insert constraints repeatedly,
-                grouping parts and using the group to constraints and joints, will help you drastically reduce time.</p>
-              <h5 class="mt-4 mb-3" style="text-align: left !important;">OS:
+              <p style="text-align: justify !important;"><b>Replace</b> allows you replace the file selected by an
+                identical copy in the assembly environment, without affecting the existing part. And taking advantage of
+                the existing detailing.</p>
+              <p style="text-align: left !important;">U$4.99 each license <a
+                  href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=f277068a1bcc7&mfid=1677083183313_f277068a1bcc7#/checkout/openButton"
+                  target="_blank">Buy
+                  Now via PayPal</a> - Other payment method?
+                Contact us.
+              </p>
+              <p style="text-align: left !important;">License type: Perpetual per computer. More details see Privacy
+                and Licensing.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4 col-sm-12" data-aos="fade-down" data-aos-delay="20" style="text-align: right !important;">
+          <article>
+            <div class="p-lg-4 p-2">
+              <h5 class="mt-4 mb-3" style="text-align: right !important;">OS:
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="btn btn-brand me-2 pulse">Win64</a>
+                <a class="btn-prod me-2 a-prod">Win64</a>
               </h5>
-              <h5 class="mt-4 mb-1" style="text-align: left !important;">Language
+              <h5 class="mt-4 mb-1" style="text-align: right !important;">Language
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="btn btn-brand me-2 pulse">English</a>
+                <a class="btn-prod me-2 a-prod">English</a>
               </h5>
             </div>
-            <article>
-              <div data-aos="fade-down" data-aos-delay="50" style="justify-content: right !important;">
-                <a class="btn btn-outline-dark ms-2" id="btnreplaceCopy" onclick="">See more</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="#" class="btn btn-brand me-2 pulse">Download</a>
-                <h3 class="mt-5 mb-3 mr-4 replaceTrial"
-                  style="text-align: left !important; margin-left: 4% !important; display: none;">Trial
-                  Description
-                </h3>
-                <p class="replaceTrial" style="text-align: left !important; margin-left: 4% !important; display: none;">
-                  The Addin works 100%
-                  on
-                  trial time.
-                  App works for 14 days Trial period with Full Features.</p>
-                <figure class="replaceTrial" style="display: none;">
-                  <div class="boxVideo">
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/T52i3JAPOuo" frameborder="0"
-                      allowfullscreen></iframe>
-                  </div>
-                </figure>
-              </div>
-            </article>
+          </article>
+        </div>
+
+        <div class="col-lg-6 col-sm-12" data-aos="fade-down" data-aos-delay="20">
+          <article>
+            <div class="p-lg-4 p-2">
+              <h3 class="mt-1 mb-3 mr-4" style="text-align: left !important;">Official Version 2.3.0
+              </h3>
+              <p style="text-align: justify !important;">
+                - Compability with versions: 2023 and earlier
+                <br>&nbsp;
+                <br>&nbsp;
+                <br>&nbsp;
+              </p>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="20"
+              style="text-align: left !important; margin-left: 1.5em !important;">
+              <a href="#" class="btn btn-brand me-2 pulse">Download Now</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-6 col-sm-12" data-aos="fade-down" data-aos-delay="20">
+          <article>
+            <div class="p-lg-4 p-2">
+              <h3 class="mt-1 mb-3 mr-4" style="text-align: left !important;">Beta version 2.3.1
+              </h3>
+              <p style="text-align: justify !important;">
+                - Compability with versions: 2024 beta and earlier
+                <br>- non-Migration files ignores
+                <br>- Missing files ignores
+                <br>- Fix location for users with 2 screens
+              </p>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="20"
+              style="text-align: left !important; margin-left: 1.5em !important;">
+              <a href="" class="btn btn-outline-dark ms-2">Download</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-12 col-sm-12" data-aos="fade-down" data-aos-delay="20"
+          style="margin-bottom: 7em !important;">
+          <article>
+            <div data-aos="fade-down" data-aos-delay="20" style="justify-content: left !important;">
+              <figure class="">
+                <div class="boxVideo">
+                  <iframe width="420" height="315" src="https://www.youtube.com/embed/T52i3JAPOuo" frameborder="0"
+                    allowfullscreen></iframe>
+                </div>
+              </figure>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="policy" class="section-padding-policy bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12" data-aos="fade-down">
+          <div class="">
+            <div class="social-icons" style="text-align: center !important; font-size: large !important;">
+              <a href="https://apps.autodesk.com/en/Publisher/PublisherHomepage?ID=GXEGMMC6EW3X" target="_blank"><i
+                  class="bi bi-google-play"></i></a>&nbsp;&nbsp;
+              <a href=""><i class="bi bi-google"></i></a>&nbsp;&nbsp;
+              <a href="https://www.youtube.com/@consultcad" target="_blank"><i class="bi bi-youtube"></i></a>
+              <br>&nbsp;
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-sm-12" data-aos="fade-down">
+          <div class="">
+            <div class="" style="text-align: center !important; font-size: small !important;">
+              <p class="mb-0"><a class="a-policy" href=""><b>News&nbsp;</b></a> - <a class="a-policy"
+                  href="./contact.html"><b>&nbsp;Support&nbsp;</b></a> - <a class="a-policy"
+                  href="./products.html"><b>&nbsp;
+                    Products
+                  </b></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-sm-12" data-aos="fade-down">
+          <div class="">
+            <div class="" style="text-align: center !important; font-size: small !important;">
+              <p class="mb-0"><a class="a-policy" href="./policy.html"><b>Terms of use&nbsp;</b> - <b>&nbsp;Privacy
+                    Policy</b></a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
+    </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-socket-wrapper clearfix">
       <div class="container">
-        <div class="row g-4 justify-content-between">
-          <div class="col-auto">
-            <p class="mb-0">Copyright © 2023 ConsultCad - All Rights Reserved ∙ Developed by Caroline Machado</p>
-          </div>
-          <div class="col-auto">
-            <ul class="flex-wrap ms-md-auto">
-              <li class="col-lg-auto">
-                <a style="margin-right: 15px;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                    fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-                    <path
-                      d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                  </svg></a>
-                <a><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                    class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
-                  </svg></a>
-              </li>
-              <!-- <li class="col-lg-auto">
-              </li> -->
-            </ul>
-            <!-- <p class="mb-0">Designed with 💜 By <a
-                href="https://www.youtube.com/channel/UCYMEEnLzGGGIpQQ3Nu_sBsQ">SALMAN</a></p> -->
+        <div class="row g-4 ">
+          <div class="" style="text-align: center !important; font-size: small !important;">
+            <p class="mb-0">© 2023 ConsultCad &nbsp;-&nbsp; by Caroline Machado</p>
           </div>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- <footer class="footer">
+    <div class="footer-socket-wrapper clearfix">
+        <div class="container">
+            <div class="row g-4 ">
+                <div class="social-icons" style="text-align: center !important; font-size: large !important;">
+                    <a href=""><i class="bi bi-google-play"></i></a>&nbsp;&nbsp;
+                    <a href=""><i class="bi bi-google"></i></a>&nbsp;&nbsp;
+                    <a href=""><i class="bi bi-youtube"></i></a>
+                    <br>&nbsp;
+                </div>
+            </div>
+
+            <div class="row g-4 ">
+                <div class="" style="text-align: center !important; font-size: small !important;">
+                    <p class="mb-0"><a><b>News&nbsp;</b></a> - <a><b>&nbsp;Support&nbsp;</b></a> - <a><b>&nbsp;
+                                Products
+                            </b></a></p>
+                </div>
+            </div>
+
+            <div class="row g-4 ">
+                <div class="" style="text-align: center !important; font-size: small !important;">
+                    <p class="mb-0"><a><b>Terms of use&nbsp;</b></a> - <a><b>&nbsp;Privacy Policy</b></a></p>
+                </div>
+            </div>
+
+            <div class="row g-4 ">
+                <div class="" style="text-align: center !important; font-size: small !important;">
+                    <p class="mb-0">© 2023 ConsultCad &nbsp;-&nbsp;by Caroline Machado</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> -->
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -308,48 +582,83 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="./assets/js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
 
   <script>
     $(function () {
-      $('#btninsertplus').click(function () {
-        $(this).siblings('.insertplusTrial').slideToggle();
+      $(".cardInsertPlus").click(function () {
+        $("#descricaoInsertPlus").show();
+
+        $("#descricaoInsertCopy").hide();
+        $("#descricaoRename").hide();
+        $("#descricaoReplace").hide();
+
+
+        $("#btnInsertCopy").removeClass("service_focused");
+        $("#btnRename").removeClass("service_focused");
+        $("#btnReplace").removeClass("service_focused");
+        $("#btnInsertPlus").toggleClass("service_focused");
+      });
+    });
+
+
+    $(function () {
+      $(".cardInsertCopy").click(function () {
+        $("#descricaoInsertCopy").show();
+
+        $("#descricaoInsertPlus").hide();
+        $("#descricaoRename").hide();
+        $("#descricaoReplace").hide();
+
+
+        $("#btnInsertPlus").removeClass("service_focused");
+        $("#btnRename").removeClass("service_focused");
+        $("#btnReplace").removeClass("service_focused");
+        $("#btnInsertCopy").toggleClass("service_focused");
+
+      });
+    });
+
+
+    $(function () {
+      $(".cardRename").click(function () {
+        $("#descricaoRename").show();
+
+        $("#descricaoInsertPlus").hide();
+        $("#descricaoInsertCopy").hide();
+        $("#descricaoReplace").hide();
+
+
+        $("#btnInsertPlus").removeClass("service_focused");
+        $("#btnInsertCopy").removeClass("service_focused");
+        $("#btnReplace").removeClass("service_focused");
+        $("#btnRename").toggleClass("service_focused");
+
+      });
+    });
+
+
+    $(function () {
+      $(".cardReplace").click(function () {
+        $("#descricaoReplace").show();
+
+        $("#descricaoInsertPlus").hide();
+        $("#descricaoInsertCopy").hide();
+        $("#descricaoRename").hide();
+
+
+        $("#btnInsertPlus").removeClass("service_focused");
+        $("#btnInsertCopy").removeClass("service_focused");
+        $("#btnRename").removeClass("service_focused");
+        $("#btnReplace").toggleClass("service_focused");
+
       });
     });
 
     $(function () {
-      $('#btninsertcopy').click(function () {
-        $(this).siblings('.insertcopyTrial').slideToggle();
-      });
+      $('#descricaoInsertPlus').show();
+      $("#btnInsertPlus").toggleClass("service_focused");
     });
-
-    $(function () {
-      $('#btnrename').click(function () {
-        $(this).siblings('.renameTrial').slideToggle();
-      });
-    });
-
-    $(function () {
-      $('#btnreplaceCopy').click(function () {
-        $(this).siblings('.replaceTrial').slideToggle();
-      });
-    });
-
-    let mybutton = document.getElementById("myBtn");
-
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    function topFunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    } 
   </script>
 </body>
 
