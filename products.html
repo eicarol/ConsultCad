@@ -108,8 +108,8 @@
         <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="15">
           <div class="service-prod cardReplace theme-shadow p-lg-4 p-2" id="btnReplace">
             <div class="iconbox">
-              <a id="imgReplace" href="#descricaoReplace"><img class="img-cover"
-                  src="./assets/images/replaceCopy.png" alt="" width="100px" height="100px"></a>
+              <a id="imgReplace" href="#descricaoReplace"><img class="img-cover" src="./assets/images/replaceCopy.png"
+                  alt="" width="100px" height="100px"></a>
             </div>
             <h5 class="mt-4 mb-3">Replace</h5>
             <div class="line"></div>
@@ -594,7 +594,7 @@
     $(function () {
       $(".cardInsertPlus").click(function () {
         $("#descricaoInsertPlus").show();
-        $('#imgInsertPlus')[0].click();
+        // $('#imgInsertPlus')[0].click();
 
         $("#descricaoInsertCopy").hide();
         $("#descricaoRename").hide();
@@ -610,7 +610,7 @@
     $(function () {
       $(".cardInsertCopy").click(function () {
         $("#descricaoInsertCopy").show();
-        $('#imgInsertCopy')[0].click();
+        // $('#imgInsertCopy')[0].click();
 
         $("#descricaoInsertPlus").hide();
         $("#descricaoRename").hide();
@@ -627,7 +627,7 @@
     $(function () {
       $(".cardRename").click(function () {
         $("#descricaoRename").show();
-        $('#imgRename')[0].click();
+        // $('#imgRename')[0].click();
 
         $("#descricaoInsertPlus").hide();
         $("#descricaoInsertCopy").hide();
@@ -644,19 +644,18 @@
     $(function () {
       $(".cardReplace").click(function () {
         $("#descricaoReplace").show();
-        $('#imgReplace')[0].click();
-
+        
         $("#descricaoInsertPlus").hide();
         $("#descricaoInsertCopy").hide();
         $("#descricaoRename").hide();
 
         $("#btnInsertPlus").removeClass("service_focused");
         $("#btnInsertCopy").removeClass("service_focused");
-        $("#btnRename").removeClass("service_focused");
-        $("#btnReplace").toggleClass("service_focused");
-
+        $("#btnRename").removeClass("service_focused");  
+        $("#btnReplace").toggleClass("service_focused");     
       });
     });
+    
 
     $(function () {
       $('#descricaoInsertPlus').show();
