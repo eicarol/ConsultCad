@@ -561,8 +561,8 @@ form textarea {
 }
 
 #myBtn:hover {
-    background-color: #2AA9AA;
-    color: white;
+    /* background-color: #2AA9AA; */
+    color: black;
 }
 .i-BtnTop {
    font-size: 1.5em;

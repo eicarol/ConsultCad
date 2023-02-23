@@ -64,24 +64,28 @@
           </div>
         </div>
       </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="bi bi-arrow-up-square i-BtnTop"></i>
+      </button>
 
       <!-- CARDS -->
       <div class="row g-4 text-center">
-        <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="15">
+        <div class="col-lg-3 col-sm-6 col-xs-6" data-aos="fade-down" data-aos-delay="15">
           <div class="service-prod cardInsertPlus theme-shadow p-lg-4 p-2" id="btnInsertPlus">
             <div class="iconbox">
-              <img class="img-cover" src="./assets/images/insertPlus.png" alt="" width="100px" height="100px"
-                onclick="">
+              <a id="imgInsertPlus" href="#descricaoInsertPlus"><img class="img-cover"
+                  src="./assets/images/insertPlus.png" alt="" width="100px" height="100px" onclick=""></a>
             </div>
             <h5 class="mt-4 mb-3">InsertPlus</h5>
             <p>Version 2.3 10/17/2022</p>
           </div>
         </div>
 
-        <div class="col-lg-3 col-sm-6 " data-aos="fade-down" data-aos-delay="15">
+        <div class="col-lg-3 col-sm-6 col-xs-6" data-aos="fade-down" data-aos-delay="15">
           <div class="service-prod cardInsertCopy theme-shadow p-lg-4 p-2" id="btnInsertCopy">
             <div class="iconbox small">
-              <img class="img-cover" src="./assets/images/insertCopy.png" alt="" width="100px" height="100px">
+              <a id="imgInsertCopy" href="#descricaoInsertCopy"><img class="img-cover"
+                  src="./assets/images/insertCopy.png" alt="" width="100px" height="100px"></a>
             </div>
             <h5 class="mt-4 mb-3 sm">InsertCopy</h5>
             <div class="line"></div>
@@ -92,7 +96,8 @@
         <div class="col-lg-3 col-sm-6 " data-aos="fade-down" data-aos-delay="15">
           <div class="service-prod cardRename theme-shadow p-lg-4 p-2" id="btnRename">
             <div class="iconbox">
-              <img class="img-cover" src="./assets/images/rename.png" alt="" width="100px" height="100px">
+              <a id="imgRename" href="#descricaoRename"><img class="img-cover" src="./assets/images/rename.png" alt=""
+                  width="100px" height="100px"></a>
             </div>
             <h5 class="mt-4 mb-3">Rename</h5>
             <div class="line"></div>
@@ -103,7 +108,8 @@
         <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="15">
           <div class="service-prod cardReplace theme-shadow p-lg-4 p-2" id="btnReplace">
             <div class="iconbox">
-              <img class="img-cover" src="./assets/images/replaceCopy.png" alt="" width="100px" height="100px">
+              <a id="imgReplace" href="#descricaoReplace"><img class="img-cover"
+                  src="./assets/images/replaceCopy.png" alt="" width="100px" height="100px"></a>
             </div>
             <h5 class="mt-4 mb-3">Replace</h5>
             <div class="line"></div>
@@ -588,11 +594,11 @@
     $(function () {
       $(".cardInsertPlus").click(function () {
         $("#descricaoInsertPlus").show();
+        $('#imgInsertPlus')[0].click();
 
         $("#descricaoInsertCopy").hide();
         $("#descricaoRename").hide();
         $("#descricaoReplace").hide();
-
 
         $("#btnInsertCopy").removeClass("service_focused");
         $("#btnRename").removeClass("service_focused");
@@ -601,15 +607,14 @@
       });
     });
 
-
     $(function () {
       $(".cardInsertCopy").click(function () {
         $("#descricaoInsertCopy").show();
+        $('#imgInsertCopy')[0].click();
 
         $("#descricaoInsertPlus").hide();
         $("#descricaoRename").hide();
         $("#descricaoReplace").hide();
-
 
         $("#btnInsertPlus").removeClass("service_focused");
         $("#btnRename").removeClass("service_focused");
@@ -619,15 +624,14 @@
       });
     });
 
-
     $(function () {
       $(".cardRename").click(function () {
         $("#descricaoRename").show();
+        $('#imgRename')[0].click();
 
         $("#descricaoInsertPlus").hide();
         $("#descricaoInsertCopy").hide();
         $("#descricaoReplace").hide();
-
 
         $("#btnInsertPlus").removeClass("service_focused");
         $("#btnInsertCopy").removeClass("service_focused");
@@ -637,15 +641,14 @@
       });
     });
 
-
     $(function () {
       $(".cardReplace").click(function () {
         $("#descricaoReplace").show();
+        $('#imgReplace')[0].click();
 
         $("#descricaoInsertPlus").hide();
         $("#descricaoInsertCopy").hide();
         $("#descricaoRename").hide();
-
 
         $("#btnInsertPlus").removeClass("service_focused");
         $("#btnInsertCopy").removeClass("service_focused");
@@ -659,6 +662,23 @@
       $('#descricaoInsertPlus').show();
       $("#btnInsertPlus").toggleClass("service_focused");
     });
+
+    let mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
   </script>
 </body>
 
